@@ -1,0 +1,12 @@
+﻿@{ 
+    @model Counter
+    ViewData["Title"] = "Counter";
+}
+
+<h1>Counter</h1>
+
+@using (Html.BeginForm())
+{
+    <input type ="text" id="number" name="number" value="@(Model.Number)" />
+    <input type ="submit" value="Click Me"/>
+}
